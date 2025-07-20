@@ -1,35 +1,33 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from 'react';
+import GoalForm from './components/GoalForm';
+import GoalList from './components/GoalList';
+// import './App.css';
+const API_URL = 'http://localhost:3000/goals';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [goals, setGoals] = useState([]);
+
+  useEffect(() => {
+    fetchGoals();
+  }, []);
+
+  const fetchGoals = async () => {
+  try {
+    const response = await fetch(API_URL);
+    const data = await response.json();
+    setGoals(data);
+  } catch (error) {
+    console.error("Error fetching goals:", error);
+  }
+};
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div style={{ padding: "2rem" }}>
+      <h1> My Savings Goals</h1>
+      <GoalForm setGoals={setGoals} goals={goals} />
+      <GoalList goals={goals} setGoals={setGoals} />
+    </div>
+  );
 }
 
-export default App
+export default App;
