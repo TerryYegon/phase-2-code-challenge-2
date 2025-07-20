@@ -1,0 +1,145 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #a9b4c4; 
+  color: #1e293b; 
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #004d99;
+  font-weight: 700;
+}
+
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+}
+
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.overview-section {
+  grid-column: span 2; 
+  min-height: 250px;
+}
+
+.time-left-section {
+  grid-column: 1 / -1; 
+}
+
+.time-left-section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #004d99;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #3b82f6; 
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+button:hover {
+  background-color: #2563eb; 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+
+.goal-card {
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+  color: #1e293b;
+}
+
+
+.progress-bar {
+  background: #e0e7ff;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4ade80, #22c55e);
+  transition: width 0.5s ease;
+  border-radius: 6px 0 0 6px;
+}
+
+.progress-bar-fill.complete {
+  background: green;
+}
+
+
+.warning {
+  color: #f59e0b; 
+  font-weight: 700;
+}
+
+.overdue {
+  color: #dc2626; 
+  font-weight: 700;
+}
+
