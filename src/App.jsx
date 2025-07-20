@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import GoalForm from './components/GoalForm';
 import GoalList from './components/GoalList';
 import DepositForm from "./components/DepositForm";
+import Overview from "./components/Overview";
 
 const API_URL = 'http://localhost:3000/goals';
 
@@ -24,10 +25,12 @@ function App() {
 
   return (
     <div style={{ padding: "2rem" }}>
-      <h1> My Savings Goals</h1>
+      <h1> Fin Path</h1>
       <GoalForm setGoals={setGoals} goals={goals} />
       <GoalList goals={goals} setGoals={setGoals} />
       <DepositForm goals={goals} setGoals={setGoals} />
+      <Overview goals={goals} />
+
     </div>
   );
 }
