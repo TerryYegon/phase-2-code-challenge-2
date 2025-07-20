@@ -4,9 +4,17 @@
       "id": "1",
       "title": "Emergency Fund",
       "targetAmount": 10000,
-      "currentAmount": 2500,
+      "currentAmount": 22500,
       "category": "Emergency",
       "deadline": "2025-12-01"
+    },
+    {
+      "id": "f5e3",
+      "title": "Travel to Mombasa",
+      "targetAmount": 50000,
+      "category": "Travel",
+      "deadline": "2025-09-30",
+      "currentAmount": 0
     }
   ]
 }

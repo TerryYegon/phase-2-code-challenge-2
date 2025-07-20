@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import GoalForm from './components/GoalForm';
 import GoalList from './components/GoalList';
-// import './App.css';
+import DepositForm from "./components/DepositForm";
+
 const API_URL = 'http://localhost:3000/goals';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
       <h1> My Savings Goals</h1>
       <GoalForm setGoals={setGoals} goals={goals} />
       <GoalList goals={goals} setGoals={setGoals} />
+      <DepositForm goals={goals} setGoals={setGoals} />
     </div>
   );
 }
