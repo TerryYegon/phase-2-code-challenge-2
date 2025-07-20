@@ -17,6 +17,7 @@ function GoalForm({ goals, setGoals }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("Submitting...");
 
     const newGoal = {
       ...formData,
@@ -76,6 +77,7 @@ function GoalForm({ goals, setGoals }) {
       </select>
 
       <input
+        placeholder="Deadline"
         name="deadline"
         type="date"
         value={formData.deadline}
