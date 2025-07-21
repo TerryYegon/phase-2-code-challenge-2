@@ -7,6 +7,14 @@
       "category": "Travel",
       "deadline": "2025-09-30",
       "currentAmount": 0
+    },
+    {
+      "id": "777a",
+      "title": "Emergency fund",
+      "targetAmount": 50000,
+      "category": "Business",
+      "deadline": "2025-08-21",
+      "currentAmount": 0
     }
   ]
 }
