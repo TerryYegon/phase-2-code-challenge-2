@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const API_URL = 'http://localhost:3000/goals';
+const API_URL = 'https://goal-planner-44hy.onrender.com/goals';
 
 function GoalForm({ goals, setGoals }) {
   const [formData, setFormData] = useState({

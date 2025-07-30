@@ -5,7 +5,7 @@ import DepositForm from "./components/DepositForm";
 import Overview from "./components/Overview";
 import './components/Styles.css';
 
-const API_URL = 'http://localhost:3000/goals';
+const API_URL = 'https://goal-planner-44hy.onrender.com/goals';
 
 function App() {
   const [goals, setGoals] = useState([]);

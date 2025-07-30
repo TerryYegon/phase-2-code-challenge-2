@@ -15,6 +15,38 @@
       "category": "Business",
       "deadline": "2025-08-21",
       "currentAmount": 0
+    },
+    {
+      "id": "e880",
+      "title": "Paying school fees",
+      "targetAmount": 100000,
+      "category": "Education",
+      "deadline": "2025-10-23",
+      "currentAmount": 0
+    },
+    {
+      "id": "1135",
+      "title": "Travel to Mombasa ",
+      "targetAmount": 50000,
+      "category": "Travel",
+      "deadline": "2025-09-30",
+      "currentAmount": 0
+    },
+    {
+      "id": "7e51",
+      "title": "Travel to Mombasa",
+      "targetAmount": 50000,
+      "category": "Travel",
+      "deadline": "2025-08-30",
+      "currentAmount": 0
+    },
+    {
+      "id": "5ef9",
+      "title": "School fees",
+      "targetAmount": 100000,
+      "category": "Education",
+      "deadline": "2025-08-30",
+      "currentAmount": 0
     }
   ]
 }
